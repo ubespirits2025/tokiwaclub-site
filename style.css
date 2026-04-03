@@ -70,8 +70,8 @@ img {
 .hero {
   min-height: 100vh;
   background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.58)),
-    url("images/top.jpg") center/cover no-repeat;
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url("images/top.PNG") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
