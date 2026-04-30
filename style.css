@@ -1,4 +1,41 @@
+
+/* ===== PC専用 強制CSS ===== */
+@media (min-width: 901px) {
+  .staff-grid {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 32px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .staff-card {
+    width: 300px !important;
+    padding: 36px 22px !important;
+    border-radius: 26px !important;
+    background: rgba(0,0,0,0.7) !important;
+    text-align: center !important;
+  }
+
+  .member-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)) !important;
+    gap: 22px !important;
+  }
+
+  .member-card {
+    padding: 30px 12px !important;
+    border-radius: 22px !important;
+    background: rgba(0,0,0,0.8) !important;
+    text-align: center !important;
+  }
+}
+
+/* ↓元のCSS */
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
