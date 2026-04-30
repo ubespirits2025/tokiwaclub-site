@@ -840,6 +840,31 @@ footer {
     font-size: 11px;
     letter-spacing: 1.5px;
   }
+  html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.team-section {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.staff-grid,
+.member-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.staff-card,
+.member-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
 }
 }
 }
