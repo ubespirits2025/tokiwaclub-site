@@ -1029,4 +1029,110 @@ footer {
   color: #00eaff !important;
   font-weight: 900 !important;
 }
+/* ===== PC + スマホ 共通：STAFF / MEMBERS 完成版 ===== */
+.team-section {
+  position: relative;
+  padding: 90px 20px 110px;
+  background:
+    linear-gradient(rgba(0, 8, 28, 0.94), rgba(0, 8, 28, 0.98)),
+    radial-gradient(circle at top, #0066ff, #001a44 45%, #000814 100%);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.staff-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 85px;
+}
+
+.staff-card {
+  width: 300px;
+  padding: 36px 22px;
+  border-radius: 26px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(0,0,0,0.72));
+  border: 1px solid rgba(255,255,255,0.28);
+  box-shadow: 0 0 42px rgba(0,207,255,0.45);
+  text-align: center;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 22px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.member-card {
+  padding: 30px 12px;
+  border-radius: 22px;
+  background: linear-gradient(160deg, rgba(0,0,0,0.86), rgba(0,50,120,0.34));
+  border: 1px solid rgba(0,200,255,0.45);
+  box-shadow: 0 0 26px rgba(0,120,255,0.45);
+  text-align: center;
+}
+
+.staff-number,
+.number {
+  display: block;
+  font-size: 54px;
+  font-weight: 900;
+  color: #00cfff;
+  text-shadow: 0 0 12px #00cfff, 0 0 28px #00cfff;
+}
+
+.manager .staff-number {
+  color: #ffd700;
+  text-shadow: 0 0 12px #ffd700, 0 0 28px #ffd700;
+}
+
+.staff-card h3,
+.member-card h3 {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 12px 0;
+}
+
+.position {
+  color: #00eaff;
+  font-weight: 900;
+}
+
+/* フェイドイン */
+.fade-up {
+  opacity: 0;
+  transform: translateY(45px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== スマホ専用微調整 ===== */
+@media (max-width: 768px) {
+  .team-section {
+    padding: 65px 14px 90px;
+  }
+
+  .staff-card {
+    width: 92%;
+    max-width: 340px;
+  }
+
+  .member-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .staff-number,
+  .number {
+    font-size: 58px;
+  }
+}
 }
