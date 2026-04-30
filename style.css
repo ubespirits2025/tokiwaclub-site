@@ -499,5 +499,347 @@ footer {
       url("images/top.PNG") center/120% no-repeat;
     background-color: #0b2f63;
   }
+    /* ===== TOKIWA CLUB STAFF / MEMBERS 豪華完成版 ===== */
+
+.team-section {
+  position: relative;
+  padding: 90px 20px 110px;
+  background:
+    linear-gradient(rgba(0, 8, 28, 0.94), rgba(0, 8, 28, 0.98)),
+    radial-gradient(circle at top, #0066ff, #001a44 45%, #000814 100%);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(0, 140, 255, 0.22), transparent 35%),
+    radial-gradient(circle at 85% 40%, rgba(255, 215, 0, 0.13), transparent 35%);
+  z-index: 0;
+}
+
+.team-section h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 54px;
+  letter-spacing: 9px;
+  margin: 0;
+  font-weight: 900;
+  text-shadow: 0 0 22px rgba(0, 180, 255, 0.95);
+}
+
+.section-sub {
+  position: relative;
+  z-index: 1;
+  color: #ffd700;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin: 12px 0 45px;
+}
+
+.staff-grid {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 85px;
+}
+
+.staff-card {
+  position: relative;
+  width: 300px;
+  padding: 36px 22px;
+  border-radius: 26px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(0,0,0,0.72));
+  border: 1px solid rgba(255,255,255,0.28);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: 0.35s;
+}
+
+.staff-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.staff-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.28), transparent);
+  transform: translateX(-100%);
+  animation: staffShine 3s infinite;
+}
+
+@keyframes staffShine {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.manager {
+  border: 1px solid #ffd700;
+  box-shadow:
+    0 0 42px rgba(255, 215, 0, 0.8),
+    inset 0 0 22px rgba(255, 215, 0, 0.28);
+}
+
+.coach {
+  border: 1px solid #00cfff;
+  box-shadow:
+    0 0 42px rgba(0, 207, 255, 0.75),
+    inset 0 0 22px rgba(0, 207, 255, 0.28);
+}
+
+.role {
+  display: inline-block;
+  font-size: 15px;
+  letter-spacing: 4px;
+  color: #fff;
+  background: rgba(255,255,255,0.16);
+  padding: 7px 20px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  font-weight: 900;
+}
+
+.staff-number {
+  display: block;
+  font-size: 54px;
+  color: #ffd700;
+  font-weight: 900;
+  text-shadow:
+    0 0 12px rgba(255,215,0,1),
+    0 0 28px rgba(255,215,0,0.85);
+}
+
+.coach .staff-number {
+  color: #00aaff;
+  text-shadow:
+    0 0 12px rgba(0,200,255,1),
+    0 0 28px rgba(0,200,255,0.85);
+}
+
+.staff-card h3 {
+  margin: 12px 0 0;
+  font-size: 22px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+.staff-card .position {
+  color: #ffd700;
+}
+
+.coach .position {
+  color: #00eaff;
+}
+
+.members-title {
+  margin-top: 20px !important;
+}
+
+.member-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 22px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.member-card {
+  position: relative;
+  padding: 30px 12px;
+  border-radius: 22px;
+  background: linear-gradient(160deg, rgba(0,0,0,0.86), rgba(0,50,120,0.34));
+  border: 1px solid rgba(0,200,255,0.45);
+  box-shadow:
+    0 0 26px rgba(0,120,255,0.45),
+    inset 0 0 16px rgba(0,120,255,0.22);
+  overflow: hidden;
+  transition: 0.35s;
+}
+
+.member-card:hover {
+  transform: translateY(-7px);
+  box-shadow:
+    0 0 34px rgba(0,180,255,0.85),
+    inset 0 0 18px rgba(0,180,255,0.35);
+}
+
+.member-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  border: 1px solid rgba(0,200,255,0.35);
+  box-shadow: 0 0 14px rgba(0,200,255,0.65);
+  opacity: 0.45;
+}
+
+.member-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ffd700, transparent);
+  animation: lineMove 2.8s infinite;
+}
+
+@keyframes lineMove {
+  100% {
+    left: 100%;
+  }
+}
+
+.number {
+  display: block;
+  font-size: 44px;
+  color: #ffd700;
+  font-weight: 900;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 10px rgba(255,215,0,1),
+    0 0 25px rgba(255,215,0,0.85);
+}
+
+.member-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+
+.position {
+  position: relative;
+  z-index: 1;
+  margin-top: 11px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #00eaff;
+  font-weight: 900;
+  text-shadow: 0 0 8px rgba(0,234,255,0.85);
+}
+
+.captain-card {
+  border-color: rgba(255,215,0,0.75);
+  box-shadow:
+    0 0 32px rgba(255,215,0,0.65),
+    inset 0 0 18px rgba(255,215,0,0.28);
+}
+
+.captain {
+  color: #ffd700;
+  text-shadow:
+    0 0 10px rgba(255,215,0,1),
+    0 0 22px rgba(255,215,0,0.9);
+}
+
+/* フェードイン */
+.fade-up {
+  opacity: 0;
+  transform: translateY(45px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 順番に出る */
+.member-card:nth-child(10) { transition-delay: 0.05s; }
+.member-card:nth-child(1) { transition-delay: 0.10s; }
+.member-card:nth-child(2) { transition-delay: 0.15s; }
+.member-card:nth-child(5) { transition-delay: 0.20s; }
+.member-card:nth-child(3) { transition-delay: 0.25s; }
+.member-card:nth-child(6) { transition-delay: 0.30s; }
+.member-card:nth-child(11) { transition-delay: 0.35s; }
+.member-card:nth-child(12) { transition-delay: 0.40s; }
+.member-card:nth-child(13) { transition-delay: 0.45s; }
+.member-card:nth-child(6) { transition-delay: 0.50s; }
+.member-card:nth-child(7) { transition-delay: 0.55s; }
+.member-card:nth-child(8) { transition-delay: 0.60s; }
+.member-card:nth-child(9) { transition-delay: 0.35s; }
+.member-card:nth-child(14) { transition-delay: 0.40s; }
+.member-card:nth-child(15) { transition-delay: 0.45s; }
+.member-card:nth-child(16) { transition-delay: 0.50s; }
+.member-card:nth-child(17) { transition-delay: 0.55s; }
+.member-card:nth-child(18) { transition-delay: 0.60s; }
+.member-card:nth-child(19) { transition-delay: 0.35s; }
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .team-section {
+    padding: 65px 14px 90px;
+  }
+
+  .team-section h2 {
+    font-size: 38px;
+    letter-spacing: 5px;
+  }
+
+  .section-sub {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+  }
+
+  .staff-grid {
+    gap: 24px;
+    margin-bottom: 70px;
+  }
+
+  .staff-card {
+    width: 100%;
+    max-width: 340px;
+    padding: 36px 18px;
+  }
+
+  .staff-number {
+    font-size: 58px;
+  }
+
+  .staff-card h3 {
+    font-size: 20px;
+  }
+
+  .member-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .member-card {
+    padding: 25px 8px;
+    border-radius: 18px;
+  }
+
+  .number {
+    font-size: 34px;
+  }
+
+  .member-card h3 {
+    font-size: 13px;
+    letter-spacing: 1.3px;
+  }
+
+  .position {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+}
 }
 }
