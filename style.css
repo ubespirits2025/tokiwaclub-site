@@ -967,4 +967,65 @@ footer {
   .number {
     font-size: 42px !important;
   }
+/* ===== PCだけ崩れる対策：全画面でスマホ風カード表示に固定 ===== */
+.staff-grid,
+.member-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 32px !important;
+  width: 100% !important;
+}
+
+.staff-card,
+.member-card {
+  display: block !important;
+  width: min(92vw, 520px) !important;
+  margin: 0 auto 32px !important;
+  text-align: center !important;
+  padding: 42px 24px !important;
+  border-radius: 28px !important;
+  background: linear-gradient(145deg, rgba(255,255,255,0.10), rgba(0,10,30,0.85)) !important;
+  border: 2px solid rgba(0, 207, 255, 0.75) !important;
+  box-shadow: 0 0 32px rgba(0,207,255,0.45), inset 0 0 20px rgba(0,207,255,0.18) !important;
+}
+
+.staff-card.manager {
+  border-color: rgba(255,215,0,0.85) !important;
+  box-shadow: 0 0 36px rgba(255,215,0,0.55), inset 0 0 18px rgba(255,215,0,0.18) !important;
+}
+
+.staff-number,
+.number {
+  display: block !important;
+  font-size: 72px !important;
+  font-weight: 900 !important;
+  margin: 10px 0 22px !important;
+  color: #00cfff !important;
+  text-shadow: 0 0 16px #00cfff, 0 0 36px #00cfff !important;
+}
+
+.staff-card.manager .staff-number {
+  color: #ffd700 !important;
+  text-shadow: 0 0 16px #ffd700, 0 0 36px #ffd700 !important;
+}
+
+.role {
+  display: inline-block !important;
+  padding: 8px 28px !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,0.18) !important;
+}
+
+.staff-card h3,
+.member-card h3 {
+  font-size: 30px !important;
+  letter-spacing: 4px !important;
+  margin: 14px 0 !important;
+}
+
+.position {
+  color: #00eaff !important;
+  font-weight: 900 !important;
+}
 }
