@@ -1134,5 +1134,47 @@ footer {
   .number {
     font-size: 58px;
   }
-}
+@media (min-width: 769px) {
+  .staff-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 32px !important;
+  }
+
+  .staff-card {
+    width: 300px !important;
+    padding: 36px 22px !important;
+    border-radius: 26px !important;
+    background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(0,0,0,0.72)) !important;
+    border: 1px solid rgba(255,255,255,0.28) !important;
+    box-shadow: 0 0 42px rgba(0,207,255,0.45) !important;
+    text-align: center !important;
+  }
+
+  .member-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)) !important;
+    gap: 22px !important;
+    max-width: 1080px !important;
+    margin: 0 auto !important;
+  }
+
+  .member-card {
+    padding: 30px 12px !important;
+    border-radius: 22px !important;
+    background: linear-gradient(160deg, rgba(0,0,0,0.86), rgba(0,50,120,0.34)) !important;
+    border: 1px solid rgba(0,200,255,0.45) !important;
+    box-shadow: 0 0 26px rgba(0,120,255,0.45) !important;
+    text-align: center !important;
+  }
+
+  .staff-number,
+  .number {
+    display: block !important;
+    font-size: 54px !important;
+    font-weight: 900 !important;
+    color: #00cfff !important;
+    text-shadow: 0 0 12px #00cfff, 0 0 28px #00cfff !important;
+  }
 }
