@@ -59,12 +59,11 @@
 
   .staff-number,
   .number {
-    color: #00eaff !important;
+    color: #00eaff;
     text-shadow:
       0 0 10px #00eaff,
-      0 0 25px #00eaff !important;
+      0 0 25px #00eaff;
   }
-  <script>
 const fadeElements = document.querySelectorAll('.fade-up');
 
 const observer = new IntersectionObserver((entries) => {
